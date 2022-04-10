@@ -23,6 +23,7 @@ public class KafkaProvider {
 
         ProducerRecord producerRecord1 = new ProducerRecord("mykafka","my-1");
 
+        ///
         kafkaProducer.send(producerRecord);
 
         kafkaProducer.send(producerRecord1 ,new Callback() {
